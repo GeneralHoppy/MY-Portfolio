@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Page with Images</title>
+
+    <!-- Link to the existing style.css for consistency -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <style>
+      .btn {
+        background-color: white;
+        border: solid rgb(88, 6, 241) 2px;
+        color: rgb(88, 6, 241);
+        padding: 1rem 2rem;
+      }
+
+      .btn:hover {
+        background-color: rgb(88, 6, 241);
+      }
+
+      .my-texts {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem;
+      }
+
+      .card-title {
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      .card-text {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar from the previous site -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <span class="selected-letter1">Chi</span>dera
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Card Section Begins -->
+    <div class="container mt-5 mb-5">
+      <h2
+        class="text-center"
+        style="
+          margin-top: 1em;
+          font-size: 3rem;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          font-weight: bold;
+          cursor: pointer;
+        "
+      >
+        MY <span class="selected-letter2">PROJECTS </span>
+      </h2>
+
+      <div class="row">
+        <!-- Loop of 12 Cards -->
+        <!-- Card Example Template -->
+        <!-- Duplicate the code below for each card, changing the image src, title, and text content -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="Calculator.png" class="card-img-top" alt="Calculator" />
+            <!-- Card Image -->
+            <div
+              class="card-body text-center d-flex flex-column align-items-center"
+            >
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">
+                This is a description for the first card. Customize this text to
+                fit your content.
+              </p>
+              <a href="Calculator/index.html" target="_blank">
+                <button class="btn btn-primary custom-btn mt-auto">
+                  Click Me
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="alarm.png" class="card-img-top" alt="Alarm Clock" />
+            <div
+              class="card-body text-center d-flex flex-column align-items-center"
+            >
+              <h5 class="card-title">Alarm Clock</h5>
+              <p class="card-text">
+                This is a description for the second card. Customize this text
+                to fit your content.
+              </p>
+              <a href="AlarmClock/index.html" target="_blank">
+                <button class="btn btn-primary custom-btn mt-auto">
+                  Click Me
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="TodoList.png" class="card-img-top" alt="Card Image 3" />
+            <div
+              class="card-body text-center d-flex flex-column align-items-center"
+            >
+              <h5 class="card-title">TODO List</h5>
+              <p class="card-text">
+                This is a description for the third card. Customize this text to
+                fit your content.
+              </p>
+              <a href="TodoList/index.html" target="_blank"
+                ><button class="btn btn-primary custom-btn mt-auto">
+                  Click Me
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Additional 6 Cards Following the Same Structure -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img src="RecipeBook.png" class="card-img-top" alt="Card Image 4" />
+            <div
+              class="card-body text-center d-flex flex-column align-items-center"
+            >
+              <h5 class="card-title">Recipe Book</h5>
+              <p class="card-text">
+                This is a description for the fourth card. Customize this text
+                to fit your content.
+              </p>
+              <a href="Recipe App/index.html" target="_blank"
+                ><button class="btn btn-primary custom-btn mt-auto">
+                  Click Me
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Card Image 5"
+            />
+            <div
+              class="card-body text-center d-flex flex-column align-items-center"
+            >
+              <h5 class="card-title">Card Title 5</h5>
+              <p class="card-text">
+                This is a description for the fifth card. Customize this text to
+                fit your content.
+              </p>
+              <a href="" target="_blank"
+                ><button class="btn btn-primary custom-btn mt-auto">
+                  Click Me
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Card Image 6"
+            />
+            <div
+              class="card-body text-center d-flex flex-column align-items-center"
+            >
+              <h5 class="card-title">Card Title 6</h5>
+              <p class="card-text">
+                This is a description for the sixth card. Customize this text to
+                fit your content.
+              </p>
+              <a href="" target="_blank"
+                ><button class="btn btn-primary custom-btn mt-auto">
+                  Click Me
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- Additional Row of 3 Cards -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Card Image 7"
+            />
+            <div
+              class="card-body text-center d-flex flex-column align-items-center"
+            >
+              <h5 class="card-title">Card Title 7</h5>
+              <p class="card-text">
+                This is a description for the seventh card. Customize this text
+                to fit your content.
+              </p>
+              <a href="" target="_blank"
+                ><button class="btn btn-primary custom-btn mt-auto">
+                  Click Me
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Card Image 8"
+            />
+            <div
+              class="card-body text-center d-flex flex-column align-items-center"
+            >
+              <h5 class="card-title">Card Title 8</h5>
+              <p class="card-text">
+                This is a description for the eighth card. Customize this text
+                to fit your content.
+              </p>
+              <a href="" target="_blank"
+                ><button class="btn btn-primary custom-btn mt-auto">
+                  Click Me
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/150"
+              class="card-img-top"
+              alt="Card Image 9"
+            />
+            <div
+              class="card-body text-center d-flex flex-column align-items-center"
+            >
+              <h5 class="card-title">Card Title 9</h5>
+              <p class="card-text">
+                This is a description for the ninth card. Customize this text to
+                fit your content.
+              </p>
+              <a href="" target="_blank"
+                ><button class="btn btn-primary custom-btn mt-auto">
+                  Click Me
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card Section Ends -->
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

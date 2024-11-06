@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  width: 350px;
+  background-color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.display {
+  font-size: 3rem;
+  color: #fff;
+  background-color: #222;
+  text-align: right;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2);
+  min-height: 80px;
+  word-wrap: break-word;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.btn {
+  background-color: #444;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.btn:active {
+  background-color: #ff7675;
+  transform: scale(0.95);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+/* Style for operator buttons */
+.btn[data-key="add"],
+.btn[data-key="subtract"],
+.btn[data-key="multiply"],
+.btn[data-key="divide"],
+.btn[data-key="equal"] {
+  background-color: #ff7675;
+  color: white;
+}
+
+.btn[data-key="add"]:hover,
+.btn[data-key="subtract"]:hover,
+.btn[data-key="multiply"]:hover,
+.btn[data-key="divide"]:hover,
+.btn[data-key="equal"]:hover {
+  background-color: #ff8e8e;
+}
+
+.btn[data-key="add"]:active,
+.btn[data-key="subtract"]:active,
+.btn[data-key="multiply"]:active,
+.btn[data-key="divide"]:active,
+.btn[data-key="equal"]:active {
+  background-color: #ff5e5e;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Clear button */
+.btn[data-key="clear"] {
+  background-color: #f0932b;
+  color: white;
+}
+
+.btn[data-key="clear"]:hover {
+  background-color: #f39c12;
+}
+
+.btn[data-key="clear"]:active {
+  background-color: #d35400;
+}
+
+.btn[data-key="backspace"] {
+  background-color: #6c5ce7;
+  color: white;
+}
+
+.btn[data-key="backspace"]:hover {
+  background-color: #8e44ad;
+}
+
+.btn[data-key="backspace"]:active {
+  background-color: #5e3370;
+}
+
+/* Decimal button */
+.btn[data-key="decimal"];

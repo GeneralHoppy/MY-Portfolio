@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+
+  <link rel="stylesheet" href="style.css">
+   <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<style>
+  
+  /* Custom button styles */
+  .custom-btn {
+    border-radius: 10px; /* Border radius */
+    background-color: #fff; /* White background */
+    padding: 1rem 2rem; /* Increase button size */
+    color:  rgb(88, 6, 241);
+    border: solid 1px rgb(88, 6, 241) ;
+  }
+
+  .custom-btn:hover {
+    background-color: rgb(88, 6, 241); /* Hover color */
+    transition: 0.4s;
+  }
+
+ 
+ .custom-secondary {
+      border-radius: 10px; /* Border radius */
+      background-color: #fff; /* White background */
+      padding: 1rem 2rem; /* Increase button size */
+      transition: background-color 0.3s ease; /* Smooth transition */
+      color:rgb(88, 6, 241);
+    }
+
+    .custom-secondary:hover {
+      background-color: rgb(88, 6, 241); /* Hover color */
+      transition: 0.4s;
+    }
+
+    .custom-primary {
+      border-radius: 10px; /* Border radius */
+      background-color: #fff; /* White background */
+      padding: 1rem 2rem; /* Increase button size */
+      transition: background-color 0.3s ease; /* Smooth transition */
+      color:rgb(88, 6, 241);
+    }
+
+    .custom-primary:hover {
+      background-color: rgb(88, 6, 241); /* Hover color */
+      transition: 0.4s;
+    }
+</style>
+
+<body>
+    
+        <!-- NavBar Begins -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+          <!-- Logo -->
+          <a class="navbar-brand" href="#"><span class="selected-letter1">Chi</span>dera</a>
+          <!-- Toggler/collapsible Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- NavBar Ends -->
+      <marquee behavior="" direction="">We are happy to see you !!! For more Enquiries: 09161459750</marquee>
+
+    <!-- Introduction Begins -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="text">
+              <h2>Hi, i'm <span class="selected-letter2">Uche Chidera </span>  <br> Front End Developer</h2>
+              <p>I'm passionate about creating seamless digital experiences. With a focus on design and efficient coding, I specialize in crafting user-friendly interfaces that work flawlessly across all devices. I thrive in collaborative environments and am dedicated to making a meaningful impact. Let's connect and discuss how I can bring value to your team!
+
+              </p>
+             <a href="#contact"><button type="button" class="btn btn-primary">Hire Me</button></a>
+              <a href="projects.html" target="_blank"><button type="button" class="btn btn-secondary">See Projects</button></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="image">
+              <img src="Image2.jpg" alt="Your Image">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- Introduction ENDs -->
+      
+    <br>
+      <!-- About section Begins -->
+      <div class=" section-with-background" id="About">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="image">
+              <img src="Image1.png" alt="Large Picture">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text2">
+              <h2><span class="selected-letter3">About</span> Me</h2>
+              <p>Hey there! I'm Uche Chidera, a passionate Front End Developer and UI/UX Designer. Graduated from Babcock University with a degree in Computer Information Systems, I've always had a fascination with the intersection of technology and creativity.
+
+                My journey into the world of web development began with a curiosity to understand how digital experiences come to life. Armed with a strong foundation in coding and design principles, I embarked on a mission to craft intuitive user interfaces that not only look great but also provide seamless experiences....</p>
+              <button class="btn btn-primary custom-btn mt-auto" data-bs-toggle="modal" data-bs-target="#modal4">Read More</button> <!-- Button with custom styles -->
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- About section Ends -->
+    
+      <!-- Services Begins  -->
+      <div class="container" id="Services">
+        <h2 class="Services-header"> <span>Ser</span>vices</h2>
+        </div>
+
+       <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center d-flex flex-column align-items-center"> <!-- Center content vertically -->
+            <i class="fas fa-laptop icon"></i> <!-- Laptop Icon -->
+            <h5 class="card-title mt-2">Web Developer</h5> <!-- Title -->
+            <p class="card-text">I specialize in building dynamic and responsive websites tailored to your needs, using the latest technologies and best practices. I also excel in creating visually appealing user interfaces that not only look great but also function flawlessly across all devices and platforms. I specialize in building websites that adapt seamlessly to various screen sizes and devices... </p> <!-- Text -->
+            <button class="btn btn-primary custom-btn mt-auto" data-bs-toggle="modal" data-bs-target="#modal1">Read More</button> <!-- Button with custom styles -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center d-flex flex-column align-items-center"> <!-- Center content vertically -->
+            <i class="fas fa-user icon"></i> <!-- Person Icon -->
+            <h5 class="card-title mt-2">UI / UX Designer</h5> <!-- Title -->
+            <p class="card-text">I focus on creating visually stunning and intuitive interfaces that captivate users and enhance brand identity. From typography and color schemes to layout and visual elements, I ensure every detail is meticulously crafted to engage and delight. I prioritize user-centric design principles to optimize the overall experience and usability of your website...</p> <!-- Text -->
+            <button class="btn btn-primary custom-btn mt-auto" data-bs-toggle="modal" data-bs-target="#modal2">Read More</button> <!-- Button with custom styles -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body text-center d-flex flex-column align-items-center"> <!-- Center content vertically -->
+            <i class="fas fa-bell icon"></i> <!-- Bell Icon -->
+            <h5 class="card-title mt-2">Social Media Marketer</h5> <!-- Title -->
+            <p class="card-text">            
+              As a seasoned web developer with a passion for digital marketing, I bring a unique blend of technical expertise and strategic thinking to the table. Leveraging my skills in web development alongside social media marketing, I offer a comprehensive range of services to help businesses thrive in the online landscape...</p>
+            <button class="btn btn-primary custom-btn mt-auto" data-bs-toggle="modal" data-bs-target="#modal3">Read More</button> <!-- Button with custom styles -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=" section-with-background" id="About">
+      <div class="col-md-6 nice">
+        <div class="Beautiful">
+          <h2>Let me Get you a beautiful website</h2>
+          <button class="btn btn-primary custom-btn mt-auto" data-bs-toggle="modal" data-bs-target="#modal4">Read More</button> <!-- Button with custom styles -->
+        </div>
+      </div>
+  </div>
+
+
+ <!-- Footer Begins -->
+ <footer class="text-center" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>Contact Me</h4>
+        <p>Feel free to reach out for any inquiries or collaborations.</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Company Details</h4>
+        <p>Address: 123 Main Street, City, Country</p>
+        <p>Email: info@example.com</p>
+        <p>Phone: +123456789</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Follow Us</h4>
+        <ul class="footer-icons">
+          <li><a href="#"><i class="fab fa-facebook-f footer-icon"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter footer-icon"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram footer-icon"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in footer-icon"></i></a></li> 
+          <li><a href="#"><i class="fab fa-github footer-icon"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer> 
+ <!-- Footer Ends -->
+
+
+
+ <!-- Modals -->
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Web Developer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          I specialize in building dynamic and responsive websites tailored to your needs, using the latest technologies and best practices. I also excel in creating visually appealing user interfaces that not only look great but also function flawlessly across all devices and platforms. I specialize in building websites that adapt seamlessly to various screen sizes and devices, ensuring a consistent and optimal user experience across desktops, tablets, and smartphones. I code websites using modern HTML, CSS, and JavaScript techniques, ensuring compatibility with all major web browsers to reach a wide audience without sacrificing performance or functionality.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary custom-secondary" data-bs-dismiss="modal" id="Button-Modal">Close</button>
+          <button type="button" class="btn btn-primary custom-primary" id="Button-Modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">UI / UX Designer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          I focus on creating visually stunning and intuitive interfaces that captivate users and enhance brand identity. From typography and color schemes to layout and visual elements, I ensure every detail is meticulously crafted to engage and delight.  I prioritize user-centric design principles to optimize the overall experience and usability of your website. Through thorough research and analysis, I identify user needs and pain points, designing seamless navigation paths and intuitive interactions that enhance satisfaction and drive conversions.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary custom-secondary" data-bs-dismiss="modal"  id="Button-Modal">Close</button>
+          <button type="button" class="btn btn-primary custom-primary"  id="Button-Modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Social Media Marketer</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          As a seasoned web developer with a passion for digital marketing, I bring a unique blend of technical expertise and strategic thinking to the table. Leveraging my skills in web development alongside social media marketing, I offer a comprehensive range of services to help businesses thrive in the online landscape. I work closely with clients to develop tailored social media strategies aligned with their business goals and target audience. From content planning and scheduling to audience engagement tactics, I ensure a cohesive approach that drives results. I create compelling and shareable content optimized for various social media platforms, including graphics, videos, and written posts. By leveraging my design skills as a web developer, I ensure that content is visually appealing, on-brand, and optimized for engagement.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary custom-secondary" data-bs-dismiss="modal" >Close</button>
+          <button type="button" class="btn btn-primary custom-primary" >Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal4Label">About Me</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Hey there! I'm Uche Chidera, a passionate Front End Developer and UI/UX Designer. Graduated from Babcock University with a degree in Computer Information Systems, I've always had a fascination with the intersection of technology and creativity.
+
+          My journey into the world of web development began with a curiosity to understand how digital experiences come to life. Armed with a strong foundation in coding and design principles, I embarked on a mission to craft intuitive user interfaces that not only look great but also provide seamless experiences.
+          
+          I believe that effective design goes beyond aesthetics—it's about understanding user behavior and creating experiences that resonate. Whether it's optimizing a website for performance or fine-tuning the user journey, I'm committed to creating solutions that leave a lasting impression.
+          
+          Collaboration is at the heart of my process. I love working closely with clients and teams to bring ideas to fruition, combining innovation with practicality to achieve results that exceed expectations.
+          
+          When I'm not immersed in pixels and lines of code, you can find me exploring the latest design trends, seeking inspiration in everyday life, or simply enjoying a good cup of coffee.
+          
+          I'm excited to connect and discuss how I can bring your vision to life. Let's create something amazing together!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary custom-secondary" data-bs-dismiss="modal" >Close</button>
+          <button type="button" class="btn btn-primary custom-primary" >Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modals End -->
+  
+
+       
+
+
+</body>
+
+
+
+ <!-- Bootstrap JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</html>
