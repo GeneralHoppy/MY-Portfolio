@@ -72,45 +72,48 @@
   </style>
 
   <body>
-    <!-- NavBar Begins -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#"
-          ><span class="selected-letter1">Chi</span>dera</a
-        >
-        <!-- Toggler/collapsible Button -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#introduction">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#About">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#Services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+     <!-- NavBar Begins -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <span class="selected-letter1">Chi</span>dera
+      </a>
+      <!-- Toggler Button for Mobile -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#introduction">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- NavBar Ends -->
+    </div>
+  </nav>
+  <!-- NavBar Ends -->
+
+
+
     <marquee behavior="" direction=""
       >We are happy to see you !!! For more Enquiries: 09161459750</marquee
     >
@@ -730,6 +733,32 @@
         );
       });
     })();
+
+    // Toggle the "X" icon on the navbar-toggler button
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('#navbarSupportedContent');
+
+    // Close the navbar when clicking outside or on the X icon
+    document.addEventListener('click', function (event) {
+      if (!navbarCollapse.contains(event.target) && !navbarToggler.contains(event.target)) {
+        navbarCollapse.classList.remove('show'); // Close the menu if clicked outside
+        navbarToggler.classList.add('collapsed'); // Switch back to burger icon
+        navbarToggler.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    navbarToggler.addEventListener('click', function () {
+      navbarToggler.classList.toggle('collapsed'); // Toggle the icon to X or burger
+    });
+    
+    // Close navbar when a link is clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navbarCollapse.classList.contains('show')) {
+          navbarToggler.click(); // Close the menu on link click
+        }
+      });
+    });
   </script>
 
   <!-- Bootstrap JavaScript Bundle with Popper -->

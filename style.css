@@ -4,37 +4,6 @@ body {
   color: #333;
 }
 
-/* Custom CSS for Navbar */
-.selected-letter1 {
-  color: rgb(88, 6, 241);
-}
-.navbar-brand {
-  margin-right: auto; /* Pushes the logo to the left */
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-.navbar-nav {
-  margin-left: auto; /* Pushes the links to the right */
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-}
-
-.navbar-nav .nav-link {
-  padding: 0.5rem 100px; /* Add padding to Navbar links */
-}
-
-/* styles.css */
-.navbar-nav .nav-link {
-  padding: 0.5rem 1rem; /* Add padding to Navbar links */
-}
-
-.navbar-nav .nav-link:last-child {
-  margin-right: 4rem; /* Remove margin from the last Navbar link */
-}
-
-/* Custom CSS for Navbar Ends */
-
 marquee {
   border: solid white 2px;
   background-color: rgb(88, 6, 241);
@@ -438,25 +407,87 @@ footer {
   background-color: #6c757d; /* Hover background color */
 }
 
-/* Navbar styles */
+/* Navbar Styles */
+.navbar {
+  background-color: #fff; /* White background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-family: "Montserrat", sans-serif; /* Modern font */
+}
+
+.navbar-brand {
+  color: rgb(88, 6, 241);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar-nav {
+  gap: 4rem; /* Moderate space between nav links */
+}
+
+.navbar-brand .selected-letter1 {
+  color: rgb(88, 6, 241);
+}
+
 .navbar-nav .nav-link {
-  position: relative; /* Positioning for pseudo-element */
-  padding: 15px 20px; /* Padding for Navbar links */
-  color: #000; /* Link color */
-  text-decoration: none; /* Remove default underline */
+  color: #333; /* Dark color for links */
+  font-weight: 500;
+  padding: 10px 15px; /* Padding for links */
+  transition: color 0.3s ease;
+  position: relative; /* Position for underline effect */
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(88, 6, 241); /* Change color on hover */
 }
 
 /* Underline animation */
 .navbar-nav .nav-link::before {
   content: ""; /* Create pseudo-element */
-  position: absolute; /* Position relative to Navbar link */
-  width: 0; /* Initial width */
-  height: 2px; /* Height of the line */
-  bottom: 0; /* Position at the bottom */
-  background-color: rgb(88, 6, 241); /* Color of the line */
-  transition: width 0.5s; /* Smooth transition for width */
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(88, 6, 241); /* Underline color */
+  transition: width 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover::before {
-  width: 100%; /* On hover, expand the line to full width */
+  width: 100%; /* Expand underline on hover */
+}
+
+/* Responsive adjustments */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png"); /* Custom icon */
+}
+
+/* Remove extra spacing on smaller screens */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 8px 15px;
+  }
+}
+
+/* Transform the icon to an "X" when the navbar is expanded */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
 }
